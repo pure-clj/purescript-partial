@@ -1,5 +1,5 @@
 (ns Partial._foreign)
 
-(defn crashWith []
+(defn crashWith [& _]
   (fn [msg]
     (throw (RuntimeException. msg))))
